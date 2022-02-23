@@ -1,19 +1,41 @@
-A = list(map(int, input().split()))
-a = (A[0])
-b = (A[1])
+# A,B = map(int, input().split()) #두수비교
 
-bx = list(map(int, str(b))) 
-bx1 = (bx[2])
-bx2 = (bx[1])
-bx3 = (bx[0])
+# if(-10000<= A and B <= 10000):
+#   if(A>=B):
+#     if(A>B):
+#       print(">")
+#     else:
+#       print("==")
+#   else:
+#     print("<")
+# else:
+#   print("값오류")
 
-an3 = (a*bx1)/100
-an2 = (a*bx2)/10
-an1 = (a*bx3)
-an0 = an3 + an2 + an1
-an = int(an0*100)
+# A = int(input()) #학점계산
 
-print(a*bx1)
-print(a*bx2)
-print(a*bx3)
-print(an)
+# if (0<=A<= 100):
+#   if(90<=A):
+#     print("A")
+#   else:
+#     if(80<=A):
+#       print("B")
+#     else:
+#       if(70<=A):
+#         print("C")
+#       else:
+#         if(60<=A):
+#           print("D")
+#         else:
+#           print("F")
+# else:
+#   print("값오류")
+
+A = int(input())
+
+if(1<=A<=4000):
+  if((A%4 == 0 and A%100 ==0) or A%400 ==0  ):
+    print("1")
+  else:
+    print("0")
+else:
+  print("값오류")
