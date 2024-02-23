@@ -58,10 +58,3 @@
 # c = int(input()) #별찍기공백포함
 # for i in (range(1,c+1)):
 #   print(" " * (c-i) + "*" * (i))
-
-
-# from shlex import join # 작은수
-
-# a,b = list(map(int, input().split()))
-# c = [d for d in input().split() if int(d) < b]
-# print(join(c))
